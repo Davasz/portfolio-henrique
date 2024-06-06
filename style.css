@@ -1,0 +1,233 @@
+header {
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+}
+
+.header-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+header img {
+    width: 15rem;
+}
+
+header button {
+    width: 15rem;
+    height: 5rem;
+    color: var(--white);
+    background-color: var(--purple);
+    border-radius: 15px;
+    box-shadow: #2F0134 0 5px;
+    transition: 300ms;
+}
+
+header button:hover {
+    transform: translateY(-5px);
+    background-color: #880496;
+    box-shadow: #6b0077 0 5px;
+}
+
+.main {
+    display: flex;
+    margin-top: 10rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-text h1 {
+    width: 40rem;
+    font-size: 64px;
+}
+
+.main-text p {
+    width: 50rem;
+    font-size: 17px;
+    margin-top: 2rem;
+}
+
+.main-text button {
+    width: 25rem;
+    height: 6rem;
+    margin-top: 4rem;
+    font-size: 25px;
+    color: var(--white);
+    background-color: var(--purple);
+    border-radius: 35px;
+    box-shadow: #2F0134 0 5px;
+    transition: 300ms;
+}
+
+.main-text button:hover {
+    transform: translateY(-5px);
+    background-color: #880496;
+    box-shadow: #6b0077 0 5px;
+}
+
+.img-main img {
+    animation: upDown 3s ease-in-out infinite;
+}
+
+
+/* ------------ ESPECIALIDADES ------------ */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.skills h1 {
+    font-size: 40px;
+}
+
+.line {
+    background-color: var(--white);
+    width: 37rem;
+    margin-top: 1.8rem;
+    height: 1.5rem;
+}
+
+.cards {
+    display: flex;
+    margin-top: 6rem;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35rem;
+    padding: 2rem;
+    border-radius: 20px;
+    transition: 300ms;
+}
+
+.card img {
+    width: 10rem;
+}
+
+.card p {
+    font-size: 20px;
+    color: rgb(201, 201, 201);
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: white 0 0 15px;
+    cursor: pointer;
+}
+
+
+/* ------------ CONTATO ------------ */
+
+
+.contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10rem;
+}
+
+.contact h1 {
+    font-size: 40px;
+}
+
+.contact .gray-bar {
+    width: 10.1rem;
+    height: 0.6rem;
+    margin-top: 0.6rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.contact .email {
+    width: 42rem;
+    height: 49px;
+    border-radius: 14px;
+    font-size: 1.7rem;
+    padding-left: 3rem;
+}
+
+.contact .mensage {
+    width: 42rem;
+    height: 20rem; 
+    border-radius: 14px;
+    font-size: 1.7rem;
+    padding-left: 3rem; 
+    padding-top: 2rem;
+    padding-right: 3rem;
+    resize: none; 
+    overflow-y: auto; 
+    margin-top: 2rem; 
+}
+
+.email:focus,
+.mensage:focus {
+    outline-color:  var(--purple)
+}
+
+.contact button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    height: 5rem;
+    margin-top: 2rem;
+    align-self: flex-end;
+    transition: 0.3s;
+    color: var(--white);
+    background-color: var(--purple);
+    border-radius: 15px;
+    box-shadow: #2F0134 0 5px;
+}
+
+.contact button span {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+.contact button:hover {
+    transform: translateY(-5px);
+    background-color: #880496;
+    box-shadow: #6b0077 0 5px;
+}
+
+.submit-button img {
+    width: 3.5rem;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 10rem;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* ------------ ANIMAÇÕES ------------ */
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
